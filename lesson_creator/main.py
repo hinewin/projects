@@ -18,7 +18,7 @@ def create_chapter(topic, custom_content=""):
 
     # Check if lesson content is empty
     if chapter_content.strip():
-        lesson_file = "CHAPTER.MD"
+        lesson_file = "TEST_CHAPTER.MD"
         try:
             with open(lesson_file, "w") as file:
                 file.write(chapter_content)
@@ -33,7 +33,7 @@ def create_lesson_structure(topic, custom_content=""):
 
     # Check if lesson content is empty
     if lesson_structure.strip():
-        lesson_structure_file = "LESSON_STRUCTURE.MD"
+        lesson_structure_file = "TEST_STRUCTURE.MD"
         try:
             with open(lesson_structure_file, "w") as file:
                 file.write(lesson_structure)
@@ -43,7 +43,7 @@ def create_lesson_structure(topic, custom_content=""):
         print ("No content to write to the file")
 
 def main():
-    create_chapter("Terraform workspace", "Provide some helpful links to relatable docs at the end of the chapter")
+    create_chapter("Nursing")
     # create_lesson_structure("Terraform")
 
 
